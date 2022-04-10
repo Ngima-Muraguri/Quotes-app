@@ -28,7 +28,7 @@ export class QuoteApComponent implements OnInit {
     ),
     new Quote(
       1,
-      'Talk is cheap. Show me the code.',
+      'A commit a day keeps the poverty away',
       'Jecinta',
       'nancy',
       12,
@@ -54,7 +54,7 @@ export class QuoteApComponent implements OnInit {
       new Date(2022, 3, 9)
     ),
     ];
-
+    
   constructor() { }
 
   ngOnInit(): void {
