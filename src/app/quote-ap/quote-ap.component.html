@@ -1,14 +1,14 @@
 <h1 class="dev">Quote developer</h1>
 <div *ngFor="let quote of quotes; let i=index" >
-    
     <div class="card para">
         <div class="card-body">
             <p >{{quote.quote}}</p>
             <p>{{quote.author}}</p>
+            <p>{{quote.name}}</p>
+            <p class="vote"(click)='upVoteIcon(i)' >{{quote.upvote}}</p>
+            <p class="vote"(click)='downVoteIcon(i)' >{{quote.downvote}}</p>
         </div>
       </div>
-
-
 </div>
 
 

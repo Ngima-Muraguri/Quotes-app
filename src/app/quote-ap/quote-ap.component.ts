@@ -15,7 +15,7 @@ export class QuoteApComponent implements OnInit {
       'Dolly',
       12,
       0,
-      new Date(2022, 3, 9)
+      new Date(2021, 3, 9)
     ),
     new Quote(
       1,
@@ -24,7 +24,7 @@ export class QuoteApComponent implements OnInit {
       'Bankys',
       12,
       0,
-      new Date(2022, 3, 9)
+      new Date(2022, 3, 7)
     ),
     new Quote(
       1,
@@ -33,7 +33,7 @@ export class QuoteApComponent implements OnInit {
       'nancy',
       12,
       0,
-      new Date(2022, 3, 9)
+      new Date(2022, 4, 9)
     ),
     new Quote(
       1,
@@ -42,7 +42,7 @@ export class QuoteApComponent implements OnInit {
       'Joseph',
       12,
       0,
-      new Date(2022, 3, 9)
+      new Date(2020, 8, 9)
     ),
     new Quote(
       1,
@@ -51,10 +51,18 @@ export class QuoteApComponent implements OnInit {
       'Flora',
       12,
       0,
-      new Date(2022, 3, 9)
+      new Date(2021, 3, 5)
     ),
     ];
-    
+    upVoteIcon(index:number){
+      var up=this.quotes[index].upvote+1;
+      this.quotes[index].upvote=up;
+  }
+
+  downVoteIcon(index:number){
+      var down=this.quotes[index].downvote+1;
+      this.quotes[index].downvote=down;
+  }
   constructor() { }
 
   ngOnInit(): void {
