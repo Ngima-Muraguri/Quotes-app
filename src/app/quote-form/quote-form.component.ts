@@ -26,7 +26,12 @@ export class QuoteFormComponent implements OnInit {
 // clearQuoteForm(quoteForm: NgForm){
 //   quoteForm.reset();
 // }
-
+// addedQuote(quote){
+//   let arraysize = this.newQuote.length;
+//   quote.id = arraysize+1;
+//   quote.completeDate = new Date(quote.completeDate)
+//   this.newQuote.push(quote)
+// }
   constructor() { }
 
   ngOnInit(): void {

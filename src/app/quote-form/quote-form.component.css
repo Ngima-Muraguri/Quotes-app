@@ -17,9 +17,9 @@
     margin: 20px;
 }
 .sub{
-    width: 80px;
+    width: 100px;
     background-color: blueviolet;
 }
-input:hover{
+button:hover{
     background-color: palevioletred;
 }
