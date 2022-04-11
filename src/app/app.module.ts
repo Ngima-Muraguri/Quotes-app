@@ -7,6 +7,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteApComponent } from './quote-ap/quote-ap.component';
 import { FormsModule } from '@angular/forms';
+import { DatePipePipe } from './date-pipe.pipe';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     QuoteFormComponent,
     QuoteDetailsComponent,
-    QuoteApComponent
+    QuoteApComponent,
+    DatePipePipe
   ],
   imports: [
     BrowserModule,
