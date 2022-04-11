@@ -13,3 +13,13 @@
 .logo{
     margin-left: 50%;
 }
+.pad{
+    margin: 20px;
+}
+.sub{
+    width: 80px;
+    background-color: blueviolet;
+}
+input:hover{
+    background-color: palevioletred;
+}
