@@ -63,6 +63,15 @@ export class QuoteApComponent implements OnInit {
       var down=this.quotes[index].downvote+1;
       this.quotes[index].downvote=down;
   }
+  // quoteDelete(isRead, index){
+  //   if (isRead) {
+  //     let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+  //     if(toDelete){
+  //       this.quotes.splice(index,1);
+  //     }
+      
+  //   }
+  // }
   constructor() { }
 
   ngOnInit(): void {

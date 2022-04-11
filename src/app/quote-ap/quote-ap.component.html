@@ -4,9 +4,10 @@
         <div class="card-body">
             <p >{{quote.quote}}</p>
             <p>{{quote.author}}</p>
-            <p>{{quote.name}}</p>
-            <p class="vote"(click)='upVoteIcon(i)' >{{quote.upvote}}</p>
-            <p class="vote"(click)='downVoteIcon(i)' >{{quote.downvote}}</p>
+            <!-- <p>{{quote.name}}</p> -->
+            <p class="vote"(click)='upVoteIcon(i)' ><i class="far fa-thumbs-up"  ></i>{{quote.upvote}}</p>
+            <p class="vote"(click)='downVoteIcon(i)' ><i class="far fa-thumbs-down" ></i>{{quote.downvote}}</p>
+            <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fa fa-trash" aria-hidden="true"></i></button>
         </div>
       </div>
 </div>
