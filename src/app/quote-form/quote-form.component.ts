@@ -11,17 +11,21 @@ import { DatePipe } from '@angular/common';
 export class QuoteFormComponent implements OnInit {
 
   newQuote =new Quote(0,"","","",0,0, new Date());
-  @Output() addQuote =new EventEmitter<Quote>();
+  @Output() add =new EventEmitter<Quote>();
 
-  //emit data to parent component
-  submitQuote(){
-    this.addQuote.emit(this.newQuote);
-  }
+  addQuote(){
+    this.add.emit(this.newQuote);
+    this.newQuote = new Quote(0,"","","",0,0, new Date());
+      }
+//   //emit data to parent component
+//   submitQuote(){
+//     this.addQuote.emit(this.newQuote);
+//   }
 
-//clear form data
-clearQuoteForm(quoteForm: NgForm){
-  quoteForm.reset();
-}
+// //clear form data
+// clearQuoteForm(quoteForm: NgForm){
+//   quoteForm.reset();
+// }
 
   constructor() { }
 
