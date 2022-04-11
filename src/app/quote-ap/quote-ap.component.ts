@@ -17,15 +17,7 @@ export class QuoteApComponent implements OnInit {
       0,
       new Date(2021, 3, 9)
     ),
-    new Quote(
-      1,
-      'when you get tired, learn to rest not quit',
-      'Joy',
-      'Bankys',
-      0,
-      0,
-      new Date(2022, 3, 7)
-    ),
+   
     new Quote(
       1,
       'A commit a day keeps the poverty away',
@@ -35,24 +27,7 @@ export class QuoteApComponent implements OnInit {
       0,
       new Date(2022, 4, 9)
     ),
-    new Quote(
-      1,
-      'when in doubt choose change',
-      'mercy',
-      'Joseph',
-      0,
-      0,
-      new Date(2020, 8, 9)
-    ),
-    new Quote(
-      1,
-      'love recognizes no barriers',
-      'Jeff',
-      'Flora',
-      0,
-      0,
-      new Date(2021, 3, 5)
-    ),
+    
     ];
     upVoteIcon(index:number){
       var up=this.quotes[index].upvote+1;
