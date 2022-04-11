@@ -13,7 +13,7 @@ export class QuoteApComponent implements OnInit {
       'if you want the rainbow you gotta put up with the rain',
       'titus',
       'Dolly',
-      12,
+      0,
       0,
       new Date(2021, 3, 9)
     ),
@@ -22,7 +22,7 @@ export class QuoteApComponent implements OnInit {
       'when you get tired, learn to rest not quit',
       'Joy',
       'Bankys',
-      12,
+      0,
       0,
       new Date(2022, 3, 7)
     ),
@@ -31,7 +31,7 @@ export class QuoteApComponent implements OnInit {
       'A commit a day keeps the poverty away',
       'Jecinta',
       'nancy',
-      12,
+      0,
       0,
       new Date(2022, 4, 9)
     ),
@@ -40,7 +40,7 @@ export class QuoteApComponent implements OnInit {
       'when in doubt choose change',
       'mercy',
       'Joseph',
-      12,
+      0,
       0,
       new Date(2020, 8, 9)
     ),
@@ -49,7 +49,7 @@ export class QuoteApComponent implements OnInit {
       'love recognizes no barriers',
       'Jeff',
       'Flora',
-      12,
+      0,
       0,
       new Date(2021, 3, 5)
     ),

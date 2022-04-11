@@ -2,12 +2,16 @@
     display: flex;
     margin-top: 8%;
     /* background-color: blueviolet; */
+    
+}
+.new{
+    /* background-color: blueviolet; */
 }
 .me{
     display:grid; 
     width: 50px; 
     align-items: center;
-    margin-left: 150px;
+    margin-left: 450px;
    
 }
 .logo{
