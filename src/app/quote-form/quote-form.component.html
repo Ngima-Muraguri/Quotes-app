@@ -1,6 +1,6 @@
 <div class="form">
     <div class="new">
-    <form (ngSubmit)="addQuote();Form.resetForm({})" #Form="ngForm" id="form"  class="me" >
+    <form (ngSubmit)="addQuote()" #Form="ngForm" id="form"  class="me" >
         <div class="form-group">
           <label for="name">Add name</label>
           <input type="text" id="visual" name="put" #name="ngModel"[(ngModel)]="newQuote.name" required class="pad">
@@ -35,3 +35,5 @@
     <!-- <img src="../../assets/quoteimglogo.png" class="logo" alt=""> -->
     
 </div>
+
+<!-- ;Form.resetForm({}) -->

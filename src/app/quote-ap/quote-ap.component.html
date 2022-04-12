@@ -7,7 +7,7 @@
             <!-- <p>{{quote.name}}</p> -->
             <p class="vote"(click)='upVoteIcon(i)' ><i class="far fa-thumbs-up"  ></i>{{quote.upvote}}</p>
             <p class="vote"(click)='downVoteIcon(i)' ><i class="far fa-thumbs-down" ></i>{{quote.downvote}}</p>
-            <button class="btn btn-sm btn-danger" id="del" (click)="quoteDelete($event ,i)" ><i class="fa fa-trash" aria-hidden="true"></i></button>
+            <button  id="del" (click)="quoteDelete($event ,i)" ><i class="fa fa-trash" aria-hidden="true"></i></button>
         </div>
       </div>
 </div>

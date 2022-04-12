@@ -12,7 +12,7 @@ export class QuoteApComponent implements OnInit {
       1,
       'if you want the rainbow you gotta put up with the rain',
       'titus',
-      'Dolly',
+      '~Dolly',
       0,
       0,
       new Date(2021, 3, 9)
@@ -22,7 +22,7 @@ export class QuoteApComponent implements OnInit {
       1,
       'A commit a day keeps the poverty away',
       'Jecinta',
-      'nancy',
+      '~nancy',
       0,
       0,
       new Date(2022, 4, 9)
