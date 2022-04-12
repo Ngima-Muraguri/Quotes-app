@@ -1,6 +1,6 @@
 <div class="form">
     <div class="new">
-    <form (ngSubmit)="addQuote()" #Form="ngForm" id="form"  class="me" >
+    <form (ngSubmit)="addQuote();Form.resetForm({})" #Form="ngForm" id="form"  class="me" >
         <div class="form-group">
           <label for="name">Add name</label>
           <input type="text" id="visual" name="put" #name="ngModel"[(ngModel)]="newQuote.name" required class="pad">
@@ -26,7 +26,7 @@
       </div>
 
         <!-- <input class="sub" type="submit" value="submit" > -->
-        <button (click)="addQuote()">submit</button>
+        <button >submit</button>
         <!-- <button type="submit" class="btn btn-success form-btn">Submit</button> -->
      
     </form>
