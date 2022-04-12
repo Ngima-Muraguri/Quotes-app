@@ -10,9 +10,10 @@
             <button class="btn btn-sm btn-danger" id="del" (click)="quoteDelete($event ,i)" ><i class="fa fa-trash" aria-hidden="true"></i></button>
         </div>
       </div>
+      <div id="mode">
+        <app-quote-form (addQuote)="addedQuote($event)"></app-quote-form>
+      </div>
+    
 </div>
-<!-- <div id="mode">
-    <app-quote-form (addQuote)="addedQuote($event)"></app-quote-form>
-  </div> -->
 
-<app-quote-form></app-quote-form>
+<!-- <app-quote-form></app-quote-form> -->

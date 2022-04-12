@@ -47,11 +47,11 @@ export class QuoteApComponent implements OnInit {
       
     }
   }
-  addedQuote(quotes){
-    let arraysize = this.quotes.length;
-    quotes.id = arraysize+1;
+  addedQuote(myn:Quote){
+    // let arraysize = this.quotes.length;
+    // quotes.id = arraysize+1;
     // quotes.completeDate = new Date(quotes.completeDate)
-    this.quotes.push(quotes)
+    this.quotes.push(myn)
   }
   constructor() { }
 

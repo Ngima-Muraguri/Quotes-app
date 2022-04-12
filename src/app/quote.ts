@@ -1,7 +1,7 @@
 export class Quote {
-  push(quote: any) {
-    throw new Error('Method not implemented.');
-  }
+  // push(quote: any) {
+  //   throw new Error('Method not implemented.');
+  // }
     showInfo:boolean;
   length: any;
     constructor(public id:number,
