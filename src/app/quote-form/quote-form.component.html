@@ -1,17 +1,32 @@
 <div class="form">
     <div class="new">
-    <form class="me" >
-        <label for="name">Add name</label>
-        <input type="text" class="pad">
+    <form (ngSubmit)="addQuote()" #Form="ngForm" id="form"  class="me" >
+        <div class="form-group">
+          <label for="name">Add name</label>
+          <input type="text" id="visual" name="put" #name="ngModel"[(ngModel)]="newQuote.name" required class="pad">
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            <p>Name is required</p>
+         </div>
+       </div>
 
-        <label for="author">Author</label>
-        <input type="text" class="pad">
+       <div class="form-group">
+        <label for="author">Author</label><br>
+        <input type="text"id="process" name="mode" #author="ngModel" [(ngModel)]="newQuote.author" class="pad">
+        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            <p>Author is required</p>
+        </div>
+       </div>
 
+      <div class="form-group">
         <label for="quote">Quote</label>
-        <textarea name="add" placeholder="add quote" id="plus" cols="30" class="pad" rows="10"></textarea>
+        <textarea name="add" placeholder="add quote" id="plus" [(ngModel)]="newQuote.quote" name="place" #quote="ngModel" cols="30" class="pad" rows="10"></textarea>
+        <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+            <p>Quote is required</p>
+        </div>
+      </div>
 
         <!-- <input class="sub" type="submit" value="submit" > -->
-        <button class="sub"type="submit" value="submit">submit</button>
+        <button class="sub form-btn" type="submit" value="submit">submit</button>
      
     </form>
    </div>  

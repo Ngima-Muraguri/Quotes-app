@@ -15,12 +15,12 @@ export class QuoteFormComponent implements OnInit {
 
   addQuote(){
     this.add.emit(this.newQuote);
-    this.newQuote = new Quote(0,"","","",0,0, new Date());
+    // this.newQuote = new Quote(0,"","","",0,0, new Date());
       }
 //   //emit data to parent component
-//   submitQuote(){
-//     this.addQuote.emit(this.newQuote);
-//   }
+  // submitQuote(){
+  //   this.addQuote.emit(this.newQuote);
+  // }
 
 // //clear form data
 // clearQuoteForm(quoteForm: NgForm){
